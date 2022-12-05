@@ -43,4 +43,4 @@ if __name__ == '__main__':
             with app.app_context():
                 db_init()
                 sys.exit(0)
-    app.run()
+    app.run(host='0.0.0.0', port="5000", debug=True)
